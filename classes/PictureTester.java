@@ -50,6 +50,102 @@ public class PictureTester
     swan.edgeDetection(10);
     swan.explore();
   }
+
+    public static void testKeepOnlyBlue()
+  {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.keepOnlyBlue();
+    beach.explore();
+  }
+   public static void testNegate()
+  {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.negate();
+    beach.explore();
+  }
+    public static void testGrayscale()
+  {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.grayscale();
+    beach.explore();
+  }
+
+   public static void  testFixUnderwater()
+  {
+    Picture water = new Picture("water.jpg");
+    water.explore();
+     water.fixUnderwater();
+     water.explore();
+  }
+
+
+
+
+
+public static void testMirrorVerticalLeftToRight(){
+    Picture beach = new Picture("caterpillar.jpg");
+    beach.explore();
+    beach.mirrorVerticalRightToLeft();
+    beach.explore();
+  }
+
+public static void testMirrorHorizontal(){
+    Picture beach = new Picture("redMotorcycle.jpg");
+    beach.explore();
+    beach.mirrorHorizontal();
+    beach.explore();
+  }
+
+  public static void testMirrorHorizontalBotToTop(){
+    Picture beach = new Picture("redMotorcycle.jpg");
+    beach.explore();
+    beach.mirrorHorizontalBotToTop();
+    beach.explore();
+  }
+   public static void testMirrorArms(){
+    Picture beach = new Picture("snowman.jpg");
+    beach.explore();
+    beach.mirrorArms();
+    beach.explore();
+  }
+
+   public static void testMirrorGull(){
+    Picture beach = new Picture("seagull.jpg");
+    beach.explore();
+    beach.mirrorGull();
+    beach.explore();
+  }
+
+  public static void testCopy(){
+    Picture beach = new Picture("kitten2.jpg");
+    beach.explore();
+   beach.copy(beach, 90, 115, 200, 340);
+    beach.explore();
+  }
+
+public static void testMyCollage()
+  {
+    Picture canvas = new Picture("640x480.jpg");
+    canvas.myCollage();
+    canvas.explore();
+  }
+
+  public static void testEdgeDetection2()
+  {
+    Picture swan = new Picture("swan.jpg");
+    swan.edgeDetection2(10);
+    swan.explore();
+  }
+
+public static void testMirrorDiagonal(){
+  Picture beach = new Picture("beach.jpg");
+  beach.explore();
+  beach.mirrorDiagonal();
+  beach.explore();
+}
   
   /** Main method for testing.  Every class can have a main
     * method in Java */
@@ -58,22 +154,26 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    testZeroBlue();
+   // testMirrorVerticalLeftToRight();
+   //testMirrorHorizontal();
+  // testMirrorHorizontalBotToTop();
+    //testZeroBlue();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
-    //testNegate();
+   // testNegate();
     //testGrayscale();
-    //testFixUnderwater();
+   //  testFixUnderwater();
     //testMirrorVertical();
-    //testMirrorTemple();
+  //  testMirrorTemple();
     //testMirrorArms();
-    //testMirrorGull();
-    //testMirrorDiagonal();
+  //  testMirrorGull();
+    testMirrorDiagonal();
     //testCollage();
-    //testCopy();
+ // testCopy();
+// testMyCollage();
     //testEdgeDetection();
-    //testEdgeDetection2();
+  //  testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();
     //testGetCountRedOverValue(250);
